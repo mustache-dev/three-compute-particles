@@ -1,0 +1,53 @@
+{
+  "name": "@vfx/particles",
+  "version": "1.0.0",
+  "description": "High-performance GPU-accelerated particle system for Three.js WebGPU with React Three Fiber",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react --external three --external @react-three/fiber --external zustand",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "three.js",
+    "webgpu",
+    "particles",
+    "vfx",
+    "effects",
+    "react-three-fiber",
+    "r3f",
+    "compute-shaders",
+    "gpu"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "peerDependencies": {
+    "@react-three/drei": "10.7.6",
+    "@react-three/fiber": "9.3.0",
+    "react": "^19.2.0",
+    "three": "^0.180.0",
+    "zustand": "^5.0.10"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/three": "0.180.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}

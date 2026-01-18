@@ -1,0 +1,32 @@
+declare module "three/tsl" {
+  export const Fn: any;
+  export const If: any;
+  export const uniform: any;
+  export const float: any;
+  export const uv: any;
+  export const vec2: any;
+  export const vec3: any;
+  export const vec4: any;
+  export const hash: any;
+  export const mix: any;
+  export const floor: any;
+  export const step: any;
+  export const mod: any;
+  export const texture: any;
+  export const instancedArray: any;
+  export const instanceIndex: any;
+  export const positionLocal: any;
+  export const cos: any;
+  export const sin: any;
+  export const atan: any;
+  export const sqrt: any;
+  export const acos: any;
+  export const PI: any;
+  export const mx_noise_vec3: any;
+  export const screenUV: any;
+  export const viewportDepthTexture: any;
+  export const positionView: any;
+  export const cameraNear: any;
+  export const cameraFar: any;
+  export const clamp: any;
+}
